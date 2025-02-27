@@ -13,4 +13,4 @@ dados.describe()
 dados.head(6)
 
 #retorna as últimas linhas da tabela (aceita paramêtro)
-dados.tail(3)
+print(dados.tail(3))
