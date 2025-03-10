@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 #Para carregar arquivo para dataframe Pandas (no formato csv)
-dados = pd.read_csv("Credit.csv")
+dados = pd.read_csv("../Credit.csv")
 
 #Para ver o "corpo" da tabela
 dados.shape
