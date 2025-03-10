@@ -55,4 +55,10 @@ s2 = pd.Series(array1)
 s3 = dados["purpose"]
 # print(s3)
 
+#renomear de forma indefinitiva (não muda no dataframe original)
+dados.rename(columns={"duration": "duração", "purpose": "propósito"})
+
+#para mudar o dataframe original
+#dados.rename(columns={"duration": "duração", "purpose": "propósito"}, inplace=True)
+
 
