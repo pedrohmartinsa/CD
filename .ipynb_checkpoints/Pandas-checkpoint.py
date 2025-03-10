@@ -61,21 +61,4 @@ dados.rename(columns={"duration": "duração", "purpose": "propósito"})
 #para mudar o dataframe original
 #dados.rename(columns={"duration": "duração", "purpose": "propósito"}, inplace=True)
 
-#para remover uma coluna
-#dados.drop("checking_status", axis=1, inplace=True)
 
-#verificar dados nulos
-dados.isnull()
-dados.isnull().sum()
-
-#remover dados com Nan
-dados.dropna()
-#ou
-#preencher os dados Nan
-# dados["duration"].fillna(0, inplace=True)
-
-#localizar intervalos de linhas e colunas, respectivamente
-dados.iloc[0:2, 0:3]
-
-#localizar linhas especificas de colunas (vai mostrar as linhas 1, 2, 5 e 7 das primeiras 4 colunas)
-dados.iloc[[1, 2, 5, 7], 0:4]
