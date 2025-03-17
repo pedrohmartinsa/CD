@@ -18,6 +18,20 @@ def amplitude(lista):
     return maior - menor
 
 #2
-texto = input("Digite uma palavra: ")
+def frase_vertical(texto):
+    for i in texto:
+        print(i)
 
-print(list(texto))
+#3
+def preco_por_peso(peso):
+    preco = 0
+
+    if peso < 0:
+        print("Peso inválido, digite um número positivo.")
+    elif 0 < peso <= 10:
+        preco = 50
+    elif 20 > peso > 10:
+        preco = 80
+    else:
+        print("Não transportamos esse peso.")
+    print(f"Para {peso:.0f}Kg, cobraremos R${preco:.2f}.")
